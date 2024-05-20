@@ -1,0 +1,63 @@
+body{
+	font-size:9pt;
+	text-align: center;
+}
+#process,
+#mw_wp_form_mw-wp-form-7 {
+	margin: 0 auto;
+	width: max-content;
+}
+
+
+
+table {
+	margin: 0 auto;
+}
+TD {font-size:9pt;}
+a:link {color:#3D83A5; text-decoration:none;}
+a:visited {color:#3D83A5; text-decoration:none;}
+a:hover {color:#FFCC00; text-decoration:none;}
+a:active {color:#FFCC33; text-decoration:none;}
+ul li	{margin:10px 0px; line-height:130%; font-size:12px;}
+p {margin:15px;}
+
+#process {width:700px;}
+#process th,td {border-right:1px solid #FFF; border-bottom:1px solid #FFF;}
+
+#lineup table{border-top:1px solid #CCC; border-left:1px solid #CCC; width:700px; margin-top:10px;}
+#lineup td {font-size:12px; border-bottom:1px solid #CCC; line-height:1.4em; padding:10px;}
+#lineup th {font-size:12px; border-right:1px solid #CCC; border-bottom:1px solid #CCC; width:200px; padding:10px; vertical-align:bottom;}
+
+dt {color:#3E5895; font-weight:bold; font-size:14px; height:25px;}
+dl {
+	float:left;
+	width:120px;
+	padding:5px;
+	margin:0 3px;
+	border:1px solid #CCC;
+	text-align:center;
+	font-weight:normal;
+	color:#000;
+	white-space:nowrap;
+}
+
+/*初期HTMLから流用*/
+.tb_title{padding-left:15px; width:200px; background-color:#E8EDF0;}
+.style2 {font-size: 11px}
+.style3 {color: #FF0000}
+#enq td {padding:5px 10px;}
+/*
+body{font-size:9pt;}
+TD {font-size:9pt; border-bottom:2px solid #FFF;}
+a:link    {color:#0000FF;}
+a:visited {color:#0000FF;}
+a:active  {color:#0000FF;}
+a:hover   {color:#0000FF;}
+
+.tb_title{padding-left:15px; width:200px; background-color:#E8EDF0;}
+.style2 {font-size: 11px}
+ul li	{margin:5px 0px; line-height:130%; font-size:12px;}
+.style3 {color: #FF0000}
+#enq td {padding:5px 10px;}
+p {margin:15px;}
+*/

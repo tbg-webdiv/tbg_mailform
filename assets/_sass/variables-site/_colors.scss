@@ -1,0 +1,84 @@
+$key-color:        #1473cb;
+$bg_color: #f3ece3;
+
+$black:             #000;
+$white:             #fff;
+$gray:              #646464;
+$light-gray:        #f4f4f4;
+$dark-gray:         #666;
+$border-gray:       #ddd;
+$bg-gray:       #f0f1f4;
+$bg-beige:       #fdfaf2;
+$bg-green:       #ecf9e6;
+$rime: #00a496;
+$banner_gr: #e7f7df;
+
+$recruit_bg: #ebebeb;
+
+$red:               #d70c18;
+$pink:              #ff1493;
+$blue:              #0a77dd;
+$light-blue:        #ebf6f7;
+$skyblue:           #5ec6e9;
+$green:             #080;
+$light-green:       #62a50b;
+$yellow:            #ff0;
+$orange:            #f08441;
+
+// site set
+
+$nav-color:         $black;
+$nav-border:        darken($key-color, 10%);
+$footer-bg:          $light-gray;
+$gnav-bg:           linear-gradient( to bottom, #0d276b, #3e5aa1);
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$disabled-gray:     #cfcfcf;
+
+$text-color:        $black;
+$text-screen: #21759b;
+$text-input: #666;
+$text-input-focus: #111;
+
+$link-color: $key-color;
+$link-visited: $key-color;
+//$link-hover: #666;
+$link-hover: $skyblue;
+// darken
+
+$text-main: #404040;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+
+
+// form
+$background-button: #e6e6e6;
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+$border-color:      #ccc;
+$border-button: #ccc #ccc #bbb;
+$border-button-hover: #ccc #bbb #aaa;
+$border-button-focus: #aaa #bbb #bbb;
+$border-input: #ccc;
+$border-abbr: #666;

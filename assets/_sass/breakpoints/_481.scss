@@ -1,0 +1,206 @@
+//#page * { background-color: #999 !important;}
+
+body {
+    font-size: 18px;
+}
+p {
+    line-height: 1.7;
+}
+img {
+    width: 100%;
+}
+br.pc {
+    display: none;
+}
+br.sp {
+    display: block;
+}
+
+a:link,
+a:visited {
+    transition: none !important;
+}
+
+/*********************
+CONTENT STYLES
+*********************/
+
+//メールフォーム
+body.page {
+    h1 {
+        font-size: 5.8vw;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .content-area.form {
+        padding: 10px;
+        .lead {
+            line-height: 1.4;
+        }
+        .form_wrap {
+            width: 100%;
+            max-width: none;
+            >h2 {
+                font-size: 1em;
+                text-align: left;
+            }
+            >section,
+            >div {
+                display: block;
+                &.bg_color {
+                    padding: 15px;
+                }
+                &.select_products {
+                    >div {
+                        display: block;
+                        >div {
+                            margin: 0;
+                            h3 {
+                                margin: 0;
+                            }
+                            &:last-child {
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                                div {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.enquete {
+                    > section {
+                        display: block;
+                        h3 {
+                            padding: 0 0 .4em 0;
+                            width: 100%;
+                            text-align: left;
+                            br {
+                                display: none;
+                            }
+                        }
+                        >div {
+                            width: 100%;
+                        }
+                    >h2 {
+                        text-align: left;
+                        }
+                    }
+                    >h2 {
+                        text-align: left;
+                        width: auto;
+                        line-height: 1.2;
+                        padding: .6em;
+                    }
+                }
+                >h2 {
+                    text-align: left;
+                    width: auto;
+                    padding: 0;
+                }
+                >div {
+                    width: auto;
+                    &.address,
+                    &.kaigyo {
+                        font-size: .88em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//WPCF7 用
+.wpcf7-form-control-wrap {
+    span {
+        font-size: .96em;
+    }
+    &[data-name="privacypolicy"] {
+        display: inline-block;
+        margin: 2em 0 .2em;
+        letter-spacing: -0.01em;
+    }
+}
+
+.wpcf7-list-item {
+    margin: 0 1em .6em 0;
+}
+
+.wpcf7-acceptance {
+    width: 100%;
+    span.wpcf7-list-item {
+        display: inline;
+    }
+}
+
+.wpcf7-spinner {
+    display: block;
+    margin: 20px auto 0;
+}
+
+//ボタン
+.btn {
+    padding: 10px 0;
+    >a,
+    >input[type="button"],
+    >input[type="reset"],
+    >input[type="submit"] {
+        padding: 0 1.5em;
+        font-size: 4.6vw;
+        line-height: 2.6;
+    }
+}
+
+
+//汎用クラス
+.flex_clm {
+    display: block;
+    &.clm2,
+    &.clm3 {
+        >div {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+#footer {
+    position: relative;
+    display: block;
+    height: auto !important;
+    padding: 30px 12px 20px;
+    .logo_site {
+        margin-bottom: 0;
+        img {
+            width: 300px;
+        }
+    }
+    .logo_tbg {
+        img {
+            width: 180px;
+        }
+    }
+    .sub {
+        ul {
+            li {
+                font-size: 3.5vw;
+                letter-spacing: -0.02em;
+                margin: 0 1em 0 0;
+            }
+        }
+    }
+}
+
+
+//アンカーリンク
+.anker_wrap {
+    .anker {
+        top: - $header-height-sp - 120px;
+    }
+}

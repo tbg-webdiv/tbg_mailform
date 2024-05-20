@@ -1,0 +1,222 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+//	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin center-middle() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@mixin center-middle-clear() {
+    position: relative;
+    top: initial;
+    left: initial;
+    -webkit-transform:initial;
+    transform: initial;
+}
+
+
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition...) {
+    // defining prefixes so we can use them in mixins below
+    $prefixes: ("-webkit-", "");
+    @each $prefix in $prefixes {
+        #{$prefix}transition: $transition;
+    }
+}
+
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+    background-color: $to;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background-image: -webkit-linear-gradient(top, $from, $to);
+    background-image: -moz-linear-gradient(top, $from, $to);
+    background-image: -o-linear-gradient(top, $from, $to);
+    background-image: linear-gradient(to bottom, $from, $to);
+}
+
+
+/*********************
+BOX SIZING
+*********************/
+
+
+/* @include box-sizing(border-box); */
+
+
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+
+@mixin box-sizing($type: border-box) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    -ms-box-sizing: $type;
+    box-sizing: $type;
+}
+
+@mixin arrowlink($size:6px,$float:left,$margin:0,$color:black) {
+    content: "";
+    display: block;
+	width: 0;
+	height: 0;
+	border: $size solid transparent;
+	border-left: $size solid $color;
+    margin: $margin;
+    float: $float;
+}
+@mixin arrowlinkT($size:6px,$color:black) {
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    margin: .2em .2em 0 0;
+}
+@mixin arrowlinkB($size:6px,$color:black) {
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    margin: .2em .2em 0 0;
+}
+@mixin arrowlinkR($size:6px,$color:black) {
+    border-right: $size solid $color;
+    border-left: $size solid transparent;
+    margin: .2em .2em 0 0;
+}
+
+
+@mixin flex-div {
+    display:flex;
+    display:-ms-flexbox;/*--- IE10 ---*/
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap:wrap;
+}
+
+@mixin morisawa-font ($setting:1) {
+    -webkit-font-feature-settings: 'palt' $setting; // for Android 4.4
+    font-feature-settings: 'palt' $setting;
+//    letter-spacing: .04em;
+}
+
+@mixin table-basic ($m-bottom:1.5em,$m-top:0) {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top: $m-top;
+	margin-bottom: $m-bottom;
+	color: #686c6f;
+    font-size: .9em;
+    line-height: 20px;
+}
+
+@mixin border-grad ($b-height:3px) {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    content: "";
+    height: $b-height;
+    width: 100%;
+    background: linear-gradient( to right, $key-color, $light-gray, #fff );
+}
+
+@mixin hl-red {
+    content: "";
+    display: block;
+    background: $red;
+    width: 5px;
+    height: 1em;
+    float: left;
+    margin: 0 .3em 0 0;
+}
+@mixin round-btn {
+    text-align: center;
+    a {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1;
+        letter-spacing: .2em;
+        display: inline-block;
+        border-radius: 30px;
+        padding: .6em 3em;
+        margin: 0 auto 2em;
+        border: 2px solid $red;
+        &:link,&:visited {
+            background-color: #fff;
+            color: $red;
+        }
+        &:hover,&:active {
+            background-color: $red;
+            color: #fff;
+        }
+    }
+}
+
+@mixin gary_dot_list {
+    padding: 0 0 0 1em;
+    margin: 0 0 2em;
+    li {
+        font-size: 16px;
+        line-height: 1.8;
+        text-indent: -1.2em;
+        &:before {
+            content: "●";
+            color: #c8c8c8;
+            margin: 0 .2em 0 0;
+        }
+    }
+}
+
+@mixin anime-tran($time:0.3s) {
+    transition: all $time ease;
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+}
+
+@mixin anime-tran-x($time:0.3s,$tran:ease) {
+    transition: all $time $tran;
+    -webkit-transition: all $time $tran;
+    -moz-transition: all $time $tran;
+}
+@mixin illust_notice {
+    display: block;
+    font-size: .6em;
+    line-height: 1.4;
+    margin: .3em 0 .7em;
+    text-align: center;
+}
