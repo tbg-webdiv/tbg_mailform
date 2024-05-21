@@ -7,9 +7,6 @@ body{
 	margin: 0 auto;
 	width: max-content;
 }
-
-
-
 table {
 	margin: 0 auto;
 }
@@ -46,18 +43,48 @@ dl {
 .style2 {font-size: 11px}
 .style3 {color: #FF0000}
 #enq td {padding:5px 10px;}
-/*
-body{font-size:9pt;}
-TD {font-size:9pt; border-bottom:2px solid #FFF;}
-a:link    {color:#0000FF;}
-a:visited {color:#0000FF;}
-a:active  {color:#0000FF;}
-a:hover   {color:#0000FF;}
 
-.tb_title{padding-left:15px; width:200px; background-color:#E8EDF0;}
-.style2 {font-size: 11px}
-ul li	{margin:5px 0px; line-height:130%; font-size:12px;}
-.style3 {color: #FF0000}
-#enq td {padding:5px 10px;}
-p {margin:15px;}
+/*
+2024/05/20
+LEDスマートリモコンWP版で追加
 */
+
+#lineup {
+	border: 1px solid #ccc;
+	width: 700px;
+	padding: 15px 10px;
+	margin: 0 auto;
+	display: flex;
+	box-sizing: border-box;
+	h2 {
+		color: #3E5895;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	>div:first-child {
+		width: 240px;
+		text-align: center;
+	}
+	>div:last-child {
+		width: 460px;
+		text-align: left;
+	}
+	.dl_contents {
+		border-bottom: 1px dotted #ccc;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		h3 {
+			font-size: 16px;
+		}
+		p {
+			margin: 0 0 15px;
+		}
+		a {
+			display: inline-block;
+			margin: 0 10px 0 0;
+		}
+	}
+	.dl_caution {
+		color: red;
+	}
+}

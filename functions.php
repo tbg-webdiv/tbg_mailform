@@ -264,7 +264,7 @@ add_action( 'wp_enqueue_scripts', function() {
 // Add CSS
 function add_my_stylesheet() {
 /*分岐する場合*/
-    if(is_page_template('pages/contact-tbgmail.php')){
+    if(is_page_template(array('pages/contact-tbgmail.php','pages/contact-complete.php'))){
         wp_register_style('main', get_template_directory_uri() .'/assets/css/download.css');
     } else {
         wp_register_style('main', get_template_directory_uri() .'/assets/css/style.css');
@@ -277,7 +277,8 @@ add_action('wp_print_styles', 'add_my_stylesheet');
 
 // CSS updatetime
 function my_update_styles( $styles ) {
-    $mtime = filemtime( get_stylesheet_directory() . '/assets/css/style.css' );
+//    $mtime = filemtime( get_stylesheet_directory() . '/assets/css/style.css' );
+    $mtime = filemtime( get_stylesheet_directory() . '/assets/css/download.css' );
     $styles->default_version = $mtime;
 }
 add_action( 'wp_default_styles', 'my_update_styles' );
