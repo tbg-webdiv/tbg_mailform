@@ -523,7 +523,7 @@ function remove_admin_menus() {
         unset($menu[101]);       // UAM
         unset($menu[80]);       // 設定
 
-        remove_menu_page('edit.php?post_type=mw-wp-form');//MW WP Form
+        //remove_menu_page('edit.php?post_type=mw-wp-form');//MW WP Form
         //remove_menu_page('wpcf7'); 
     } else {
     global $menu;
