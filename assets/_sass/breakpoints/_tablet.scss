@@ -1,8 +1,5 @@
 //#page * { background-color: rgba(0, 0, 0, .1) !important;}
 
-br.tablet {
-    display: block;
-}
 
 /*********************
 LINK STYLES
@@ -15,9 +12,6 @@ a:visited {
     &:active {
         opacity: 1 !important;
     }
-}
-a.external_link {
-    display: inline;
 }
 
 /*********************
@@ -32,46 +26,8 @@ LAYOUT & GRID STYLES
 CONTENT STYLES
 *********************/
 
-//ページ基本
-#page {
-    #content {
-        padding: 0;
-    }
-}
-.content-area {
-    max-width: none;
-}
-
-//メールフォーム
-body.page {
-    .content-area.form {
-        padding: 25px;
-        .form_wrap {
-            >section,
-            >div {
-                &.bg_color {
-                    padding: 20px;
-                }
-                &.select_products {
-                    >div {
-                        >div {
-                            margin: 0 0 .2em 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 /*********************
 FOOTER STYLES
 *********************/
-
-#footer {
-    padding: 60px 20px 67px;
-    .logo_tbg {
-        margin: 0 0 60px;
-    }
-}
