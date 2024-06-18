@@ -13,7 +13,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<?php if (@$_SERVER["SERVER_NAME"] === 'products.tb-group.co.jp'): ?>
+<?php if (@$_SERVER["SERVER_NAME"] === 'products.tb-group.co.jp' && !is_user_logged_in()): ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW7BK26ZW9"></script>
 <script>
