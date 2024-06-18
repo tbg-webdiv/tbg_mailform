@@ -97,7 +97,115 @@ CONTENT STYLES
         }
     }
 }
+//全体の配置指定
+#dl_ledsr {
+    position: relative; 
+    width: 710px;
+    padding: 0px;
+    margin: 0 auto;
+}
+img {
+    margin-right: 5px;
+}
+//手順案内タイトル
+.dl_title {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    position: relative;
+    height: 50px;
+    font-weight: unset;
+    a {
+        position: absolute;
+        left: 590px;
+        top: 19px;
+        font-size: 12px;
+    }
+}
+.text {
+    position: absolute;
+    font-size: 19px;
+    color: #fff;
+    left: 9%;
+    top: 14px;
+    text-shadow: 3px 3px 15px #000;
+}
+p {
+    margin: 12px;
+    font-size: 12px;
+}
 
+//個人情報保護方針
+.p-info::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: .2em .2em 0 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: none;
+    border-left: 5px solid #0bb919;
+}
+//ダウンロード手順
+h2.dl {
+    display: flex;
+    width: 695px;
+    border-bottom: 3px dotted #4382C9;
+    font-size: 17px;
+    color: #4462A0;
+    margin: 5px;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+//DL手順リスト
+.dl_list{
+    counter-reset:list;
+    list-style-type:none;
+    font-size: 13px;
+    padding:5px 0 5px 12px;
+}
+.dl_list li{
+    position:relative;
+    margin: 5px 0px 33px 0px;
+    padding-left:40px;
+    font-size:13px;
+    line-height: 35px;
+    border: 0;
+    color: #000;
+    background-color: #E1E9F9;
+    height: 30px;
+}
+.dl_list li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 10px;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    color: #fff;
+    line-height:21px;
+    border-radius: 3px;
+    background: #336EAA;
+    top: 5px;
+}
+
+.dl_list li:not(:last-child)::after {
+    margin-left: 165px;
+    margin-top: 4px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 15px solid #649FC8;
+    border-bottom: 0;
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent; 
+}
 //ボタン
 .btn {
     text-align: center;
@@ -148,33 +256,78 @@ body.error404 {
     }
 }
 
-//表組
-.tbl {
-    border-collapse: collapse; 
-    font-size: 1em;
-    text-align: left;
-    margin: 10px auto 20px;
-    width: 94%;
-    th,td {
-        border-bottom: 1px solid $key-color;
-        padding: .5em .5em .5em 0;
-        line-height: 1.4;
+//アンケート入力
+#que {
+    position: relative; 
+    width: 710px;
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+h2.que_tit {
+    display: flex;
+    position:relative;
+    padding:0 0 1px 10px;
+    font-size:16px;
+    line-height: 28px;
+    border: 0;
+    color: #2C4F95;
+    background-color: #D4DFF3;
+    width: 650px;
+    height: 30px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+section {
+    display: flex;
+    align-items: baseline;
+    margin: 1px;
+    border-bottom: 1px dotted #fff;
+    h3 {
+        width: 30%;
+        font-size: 12px;
+        font-weight: normal;
+        background-color: #E8EDF0;    
     }
-    thead,
-    tbody {
-        .center {
-            text-align: center;
-        }
+    div {
+        width: 70%;
     }
-    thead {
-        th {
-            color: $key-color;
-            font-weight: bold;
-            white-space: nowrap;
+    #mw_wp_form_mw-wp-form-7 {
+        display: inline-block;
+        >input {
+            border: 1px solid #ccc;
         }
     }
 }
-
+textarea {
+    display: inline-block;
+    width: 278px;
+    height: 101px;
+    border: 1px solid #ccc;
+}
+select {
+    display: inline-block;
+    inline-size: none;
+    font-size: 12px;
+}
+h3 {
+    width: 150px;
+    .style3 {
+        display: inline-block;
+        color: #f00;
+    }
+    
+}
+div.style2 {
+    font-size: 11px;
+    text-align: start;
+}
+span.style2 {
+    font-size: 11px;
+    color: #ccc;
+}
 /*********************
 FOOTER STYLES
 *********************/
