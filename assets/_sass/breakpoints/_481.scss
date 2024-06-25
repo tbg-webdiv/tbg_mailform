@@ -1,7 +1,7 @@
 //#page * { background-color: #999 !important;}
 
 body {
-    font-size: 18px;
+    font-size: 3vw;
 }
 p {
     line-height: 1.7;
@@ -24,7 +24,65 @@ a:visited {
 /*********************
 CONTENT STYLES
 *********************/
-
+body #mainwrap {
+    width: 100%;
+    overflow-wrap: normal;
+    overflow: hidden;
+    font-size: 3.5vw;
+}
+h1 {
+    display: block;
+    font-size: 5vw;
+    line-height: 1.2;
+    text-align: left;
+    .text {
+        position: absolute;
+        font-size: 0.55em;
+        top: .5em;
+        left: 2.5em;
+    }
+}
+img {
+    position: relative;
+    width: auto;
+}
+a.p-info {
+    display: block;
+    position: absolute;
+    left: 79vw;
+    top: 1vw;
+}
+h2.dl {
+    width: auto;
+    height: auto;
+    font-size: 3vw;
+}
+.dl_list {
+    text-align: left;
+    font-size: 3.5vw;
+}
+.dl_list li {
+    position: relative;
+    vertical-align: middle;
+}
+li::before {
+    position: absolute;
+}
+li::after {
+    position: absolute;
+}
+section.col {
+    display: block;
+}
+#mw_wp_form_mw-wp-form-7 {
+    display: block;
+    >input {
+        display: inline-block;
+    }
+}
+form {
+    width: auto;
+}
 
 /*********************
 FOOTER STYLES

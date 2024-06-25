@@ -11,13 +11,12 @@ get_header();
 ここは固定ページに投稿
 -->
 <div id="mainwrap">
-    <div id="dl_ledsr" class="dl_title">
-        <h1>
-            <img decoding="async" src="/entry/wp-content/themes/tbg_mailform/assets/img/download_ledsmartremote_titleback.png">
-                <div class="text">LEDスマートリモコン　ダウンロード</div>
-                    <a class="p-info" href="https://www.tb-group.co.jp/joho/kojin.html" onclick="window.open(&quot;https://www.tb-group.co.jp/joho/kojin.html&quot;,&quot;&quot;,&quot;width=570,height=580&quot;);return false">個人情報保護方針</a>
-        </h1>
-            <p>ダウンロードサービスをご利用される方はお手数ですが、下記の手順に従ってアンケートにお答えください。</p>
+    <h1>
+        <img decoding="async" src="/entry/wp-content/themes/tbg_mailform/assets/img/download_ledsmartremote_titleback.png">
+            <div class="text">LEDスマートリモコン　ダウンロード</div>
+                <a class="p-info" href="https://www.tb-group.co.jp/joho/kojin.html" onclick="window.open(&quot;https://www.tb-group.co.jp/joho/kojin.html&quot;,&quot;&quot;,&quot;width=570,height=580&quot;);return false">個人情報保護方針</a>
+    </h1>
+        <p>ダウンロードサービスをご利用される方はお手数ですが、下記の手順に従ってアンケートにお答えください。</p>
         <!-- GeoTrust Smart Icon tag. Do not edit. -->
                     <div></div>
         <!-- END of GeoTrust Smart Icon tag -->
@@ -32,7 +31,6 @@ get_header();
                     <li>「ダウンロード」ボタンを選択すると、ダウンロードが開始されます。（任意の場所に保存してください）</li>
                     <li>ダウンロードされたファイルを選択し、「LEDスマートリモコン」のインストールを行います。</li>
                 </ol>
-    </div>
         <!--アンケート・ダウンロード手順案内　ここまで-->
         <!--プラグイン MW WP Form が生成するHTML -->
         <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
