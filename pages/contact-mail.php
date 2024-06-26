@@ -11,11 +11,10 @@ get_header();
 ここは固定ページに投稿
 -->
 <div id="mainwrap">
-    <h1>
-        <img decoding="async" src="/entry/wp-content/themes/tbg_mailform/assets/img/download_ledsmartremote_titleback.png">
-            <div class="text">LEDスマートリモコン　ダウンロード</div>
-                <a class="p-info" href="https://www.tb-group.co.jp/joho/kojin.html" onclick="window.open(&quot;https://www.tb-group.co.jp/joho/kojin.html&quot;,&quot;&quot;,&quot;width=570,height=580&quot;);return false">個人情報保護方針</a>
-    </h1>
+    <div class="p-info-wrap">
+        <a class="p-info" href="https://www.tb-group.co.jp/joho/kojin.html" onclick="window.open(&quot;https://www.tb-group.co.jp/joho/kojin.html&quot;,&quot;&quot;,&quot;width=570,height=580&quot;);return false">個人情報保護方針</a>
+    </div>
+    <h1>LEDスマートリモコン ダウンロード</h1>
         <p>ダウンロードサービスをご利用される方はお手数ですが、下記の手順に従ってアンケートにお答えください。</p>
         <!-- GeoTrust Smart Icon tag. Do not edit. -->
                     <div></div>
@@ -24,12 +23,17 @@ get_header();
                 <img decoding="async" src="/entry/wp-content/themes/tbg_mailform/assets/img/dltejun.png" alt="ダウンロード手順">ダウンロード手順
             </h2>
                 <ol class="dl_list">
-                    <li>下記の項目にお答えください。（※印は必須項目です）</li>
-                    <li>確認ボタンをクリックすると確認ページへ進みます。</li>
-                    <li>内容を確認し間違いがなければ、「送信」ボタンをクリックします。</li>
-                    <li>アンケート送信完了の画面が開き、「ダウンロード」ボタンが表示されます。</li>
-                    <li>「ダウンロード」ボタンを選択すると、ダウンロードが開始されます。（任意の場所に保存してください）</li>
-                    <li>ダウンロードされたファイルを選択し、「LEDスマートリモコン」のインストールを行います。</li>
+                    <li><span>1</span>下記の項目にお答えください。（※印は必須項目です）</li>
+                    
+                    <li><span>2</span>確認ボタンをクリックすると確認ページへ進みます。</li>
+                    
+                    <li><span>3</span>内容を確認し間違いがなければ、「送信」ボタンをクリックします。</li>
+                    
+                    <li><span>4</span>アンケート送信完了の画面が開き、「ダウンロード」ボタンが表示されます。</li>
+                    
+                    <li><span>5</span>「ダウンロード」ボタンを選択すると、ダウンロードが開始されます。（任意の場所に保存してください）</li>
+                    
+                    <li><span>6</span>ダウンロードされたファイルを選択し、「LEDスマートリモコン」のインストールを行います。</li>
                 </ol>
         <!--アンケート・ダウンロード手順案内　ここまで-->
         <!--プラグイン MW WP Form が生成するHTML -->
@@ -45,15 +49,12 @@ get_header();
         <div class="dl_main">
             <section class="col">
                 <h3>会社名・店舗名<span class="style3">※</span></h3>
-                    <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                         <input type="text" name="corp" id="corp" class="corp" size="40" value="">
                             <span class="style2">（全角）</span>
-                    </div>
             </section>
             <section class="col">
                 <h3>業種<span class="style3">※</span></h3>
                 <div class="other">
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <select name="co_type" id="co_type" class="co_type">
                         <option value="" selected="selected">（選択して下さい） </option>
                         <option value="小売業"> 小売業 </option>
@@ -66,39 +67,29 @@ get_header();
                     </select>
                 </div>
                 <div class="style2">　その他を選択された場合、ご入力ください。
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                         <input type="text" name="co_type_other" id="co_type_other" class="co_type_other" size="20" value="">
                         <span class="style2">（全角）</span>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section class="col">
                 <h3>ご利用機種<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="kisyu" id="kisyu" class="kisyu" size="30" value="">
                         <span class="style2">（半角英数字）</span>
-                </div>
             </section>
             <section class="col">
                 <h3>製造番号<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="serial" id="serial" class="serial" size="20" value="">
                         <span class="style2">（半角英数字）</span>
                             <div id="valid_message">　LED表示機本体の保証書に記載されている8桁の番号をご記入ください。</div>
-                </div>
             </section>
             <section class="col">
                 <h3>購入販売社店名<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="shop" id="shop" class="shop" size="20" value="">
                         <span class="style2">（全角）</span>
                             <div class="style2">　製品を購入された販売社店名をご入力ください。</div>
-                </div>
             </section>
             <section class="col">
                 <h3>購入日<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <select name="date_1" id="date_1" class="date_1">
                         <option value="" selected="selected"> （選択して下さい） </option>
                         <option value="2016"> 2016 </option>
@@ -177,44 +168,32 @@ get_header();
                     </select>
                         <span>日</span>
                             <div class="style2">　製品を購入された日付をご入力ください。</div>
-                </div>
             </section>
             <section class="col">
                 <h3>お名前 （漢字）<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
-                    <div class="last_name">姓</div>
-                        <input type="text" name="name_1" id="name_1" class="name_1" size="20" value="">
-                </div>
-                    <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
-                        <div class="first_name">名</div>
-                            <input type="text" name="name_2" id="name_2" class="name_2" size="20" value="">
+                    <div class="last_name">姓
+                        <input type="text" name="name_1" id="name_1" class="name_1" size="20" value=""></div>
+                        <div class="first_name">名
+                            <input type="text" name="name_2" id="name_2" class="name_2" size="20" value=""></div>
                                 <span class="style2">（全角）</span>
-                    </div>
             </section>
             <section class="col">
                 <h3>お名前 （フリガナ）<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
-                    <div class="last_name">姓</div>
-                        <input type="text" name="kana_1" id="kana_1" class="kana_1" size="20" value="">
-                </div>
-                    <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
-                        <div class="first_name">名</div>
-                            <input type="text" name="kana_2" id="kana_2" class="kana_2" size="20" value="">
+                    <div class="last_name">姓
+                        <input type="text" name="kana_1" id="kana_1" class="kana_1" size="20" value=""></div>
+                        <div class="first_name">名
+                            <input type="text" name="kana_2" id="kana_2" class="kana_2" size="20" value=""></div>
                             <span class="style2">（全角）</span>
-                    </div>
             </section>
             <section class="col">
                 <h3>郵便番号</h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="post_1" id="post_1" class="post_1" size="6" value="">
                         -
                     <input type="text" name="post_2" id="post_2" class="post_2" size="8" value="">
                         <span class="style2">（半角数字）</span>
-                </div>
             </section>
             <section class="col">
                 <h3>住所：都道府県名<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <select name="pref" id="pref" class="pref">
                         <option value="" selected="selected">（選択して下さい） </option>
                         <option value="北海道"> 北海道 </option>
@@ -265,55 +244,43 @@ get_header();
                         <option value="鹿児島県"> 鹿児島県 </option>
                         <option value="沖縄県"> 沖縄県 </option>
                     </select>
-                </div>
             </section>
             <section class="col">
                 <h3>住所：それ以降<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="addr_1" id="addr_1" class="addr_1" size="50" value="">
                     <span class="style2">（全角）</span>
-                </div>
             </section>
             <section class="col">
                 <h3>電話番号<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="tel_1" id="tel_1" class="tel_1" size="8" value="">
                     -
                     <input type="text" name="tel_2" id="tel_2" class="tel_2" size="8" value="">
                     -
                     <input type="text" name="tel_3" id="tel_3" class="tel_3" size="8" value="">
                         <span class="style2">（半角数字）</span>
-                </div>
             </section>
             <section class="col">
                 <h3>ＦＡＸ番号</h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="fax_1" id="fax_1" class="fax_1" size="8" value="">
                         -
                     <input type="text" name="fax_2" id="fax_2" class="fax_2" size="8" value="">
                         -
                     <input type="text" name="fax_3" id="fax_3" class="fax_3" size="8" value="">
                         <span class="style2">（半角数字）</span>
-                </div>
             </section>
             <section class="col">
                 <h3>メールアドレス<span class="style3">※</span></h3>
-                <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                     <input type="text" name="email" id="email" class="email" size="40" value="">
                         <span class="style2">（半角英数字・記号）</span>
                             <div class="style2">　ソフトのバージョンアップ等のご案内をお送り致します。
                             </div>
-                </div>
             </section>
             <section class="col">
                     <h3>製品に関するご意見・ご要望などございましたらご記入下さい。</h3>
-                    <div id="mw_wp_form_mw-wp-form-7" class="mw_wp_form mw_wp_form_input  ">
                         <textarea name="q2" id="q2" class="q2" cols="40" rows="5"></textarea>
                             <span class="style2">（全角）</span>
-                    </div>
             </section>
             <input type="submit" name="submitConfirm" value="確認画面へ" class="submit">
-            </div>
             <div class="copyright">COPYRIGHT © TB GROUP INC. ALL RIGHTS RESERVED.</div>
             <!--MW WP Form に投稿するHTML ここまで -->
         </div>
