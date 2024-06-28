@@ -103,13 +103,16 @@ CONTENT STYLES
     position: relative;
     width: auto;
     margin: 0 auto;
+    img {
+        width: auto;
+    }   
     .p-info-wrap {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        a {
-            display: block;
-            font-size: 12px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    a {
+        display: block;
+        font-size: 12px;
         }
     }
     >h1 {
@@ -137,154 +140,161 @@ CONTENT STYLES
         border-right: none;
         border-left: 5px solid #0bb919;
     }
-}
-p {
-    font-size: 14px;
-    text-align: left;
-    margin: 10px;
-}
-img {
-    width: auto;
-}
-//DL手順見出し
-h2.dl {
-    display: flex;
-    width: auto;
-    border-bottom: 3px dotted #4382C9;
-    font-size: 1em;
-    color: #4462A0;
-    margin: 5px;
-    align-items: center;
-    padding: 0 0 0 10px;
-}
-//DL手順リスト
-.dl_list{
-    counter-reset:list;
-    list-style-type:none;
-    font-size: 1.3em;
-    padding:5px 10px 5px 12px;
-}
-
-.dl_list li{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px 0px 33px 0px;
-    padding: 9px 10px 7px 15px;
-    font-size:16px;
-    line-height: 1.5;
-    border: 0;
-    color: #000;
-    background-color: #E1E9F9;
-    height: auto;
-    >span {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        padding: 2px 0px 0px 6px;
-        line-height: 1.5;
-        margin-right: 14px;    
-        background: #336EAA;
-        border-radius: 3px;
-        color: #fff;
+    p {
+        font-size: 14px;
+        text-align: left;
+        margin: 10px;
     }
-}
-/*
-.dl_list li:not(:last-child)::after {
-    margin-left: 165px;
-    margin-top: 6px;
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-top: 15px solid #649FC8;
-    border-bottom: 0;
-    border-right: 14px solid transparent;
-    border-left: 14px solid transparent; 
-}
- */
-//アンケートtitle
-h2.que_tit {
-    display: flex;
-    padding:0 0 1px 10px;
-    font-size:1em;
-    border: 0;
-    color: #2C4F95;
-    background-color: #D4DFF3;
-    width: auto;
-    height: auto;
-    border-radius: 12px;
-    align-items: center;
-}
-//入力欄の設定
-.dl_main {
-    margin: 15px 0 30px 0;
-}
-section.col {
-    display: flex;
-    .other {
-        display: inline-block;
+    //DL手順見出し
+    h2.dl {
+        display: flex;
+        border-bottom: 3px dotted #4382C9;
+        font-size: 1em;
+        color: #4462A0;
+        margin: 5px;
+        align-items: center;
+        padding: 0 0 0 10px;
     }
-}
-//項目
-h3 {
-    width: auto;
-    font-size: .75em;
-    font-weight: normal;
-    background-color: #E8EDF0;
-    margin: 0 0 1px 0;
-    padding: 1px 0 0 5px;
-    .style3 {
-        display: inline-block;
-        color: #f00;
+    //DL手順リスト
+    .dl_list{
+        counter-reset:list;
+        list-style-type:none;
+        font-size: 18px;
+        padding:5px 10px 5px 12px;
+        & li{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+            line-height: 1.5;
+            border: 0;
+            span {
+                display: block;
+                width: 20px;
+                padding: 10px 0px 10px 6px;
+                line-height: 1.5;
+                background: #336EAA;
+                border-radius: 3px;
+                font-size: 14px;
+                color: #fff;
+                +span {
+                    width: 97%;
+                    background-color: #E1E9F9;
+                    color: #000;
+                }
+            }
+            &:not(:last-child)::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 2% 48%;
+                border-style: solid;
+                border-top: 15px solid #649FC8;
+                border-bottom: 0;
+                border-right: 14px solid transparent;
+                border-left: 14px solid transparent; 
+            }
+        }
     }
-}
-//プラグイン配置
-#valid_message {
-    font-size: 11px;
-}
-textarea {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    border: 1px solid #000;
-    border-radius: 2px;
-}
-input[type="text"] {
-    width: auto;
-    border: 1px solid #000;
-}
-//選択欄
-span {
-    font-size: 13px;
-}
-select {
-    display: inline-block;
-    font-size: 13px;
-    border: 1px solid #000;
-    border-radius: 2px;
-}
-div.style2 {
-    font-size: .7em;
-}
-span.style2 {
-    font-size: 11px;
-    color: #808080;
-}
-.last_name,.first_name {
-    display: inline-block;
-    font-size: .75em;
-}
-//確認btn
-input.submit {
-    margin: 0 auto;
-}
-//フッター
-.copyright {
-    position: relative;
-    font-size: .9em;
-    border-top: 1px solid #000;
-    padding: 10px auto;
+    //アンケートtitle
+    h2.que_tit {
+        display: flex;
+        margin: 35px 0 10px;
+        padding:0 0 1px 10px;
+        border: 0;
+        background-color: #D4DFF3;
+        border-radius: 12px;
+        align-items: center;
+        >span {
+            display: block;
+            font-size: 18px;
+            color: #2C4F95;
+        }
+    }
+        //入力欄の設定
+    .dl_main {
+        margin: 15px 0 30px 0;
+        section.col {
+            display: flex;
+            width: 100%;
+            //項目
+            h3 {
+                display: block;
+                width: 12em;
+                font-size: 12px;
+                font-weight: normal;
+                background-color: #E8EDF0;
+                margin: 0 0 1px 0;
+                padding: 1px 0 0 5px;
+                .style3 {
+                    display: inline-block;
+                    margin: 0 5px;
+                    width: 10px;
+                    color: #f00;
+                }
+            }
+            select {
+                display: inline-block;
+                font-size: 13px;
+                border: 1px solid #000;
+                border-radius: 2px;
+            }        
+            span {
+                display:block;
+                width: 80%;
+                margin: .5em;
+                font-size: 13px;
+                .valid_message {
+                    margin: 0;
+                    font-size: 11px;
+                    text-align: left;
+                }        
+                textarea {
+                    display: inline-block;
+                    width: auto;
+                    height: auto;
+                    border: 1px solid #000;
+                    border-radius: 2px;
+                }        
+                >span {
+                    display: inline-block;
+                    width: auto;
+                    margin: .5em 0;
+                    font-size: 11px;
+                    >.valid_message {
+                        display: inline-block;
+                    }
+                }
+                .style2 {
+                    display: inline-block;
+                    width: auto;
+                    margin: 2px;
+                    font-size: 11px;
+                    color: #808080;
+                }
+                input {
+                    width: auto;
+                    border: 1px solid #000;
+                    border-radius: 2px;
+                    overflow: hidden;
+                }
+            }
+        }
+        //確認btn
+        .check {
+            text-align: center;
+        }
+        //フッター
+        .copyright {
+            position: relative;
+            border-top: 1px solid #000;
+            font-size: 15px;
+            text-align: center;
+            margin: 25px auto;
+        }        
+    }
 }
 //ボタン
 .btn {

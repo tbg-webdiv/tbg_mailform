@@ -38,55 +38,6 @@ h2.dl {
     position: relative;
     vertical-align: middle;
 }
-/*
-li::before {
-    position: absolute;
-}
-li::after {
-    position: absolute;
-}
-*/
-h2.que_tit {
-    width: auto;
-    margin: 0;
-}
-h3 {
-    background: none;
-}
-section.col {
-    display: block;
-    border-top: 1px dotted;
-    line-height: 1.5;
-    padding: 10px;
-}
-input {
-    width: auto;
-}
-#mainwrap {
-    .p-info-wrap {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        a {
-            display: block;
-            font-size: 12px;
-        }
-    }
-    >h1 {
-        font-size: 19px;
-        line-height: 1;
-        color: #fff;
-        text-shadow: 3px 3px 15px #000;
-
-        width: 100%;
-        height: 50px;
-        margin: 10px 0 0 0;
-        padding: 15px 0 0 64px;
-
-        background-image: url('/entry/wp-content/themes/tbg_mailform/assets/img/download_ledsmartremote_titleback.png');
-        background-repeat: no-repeat;
-    }
-}
 @media only screen and (min-width: 1px) and (max-width: 414px) {
     #mainwrap {
         .p-info-wrap {
@@ -105,9 +56,26 @@ input {
             font-size: 4.7vw;
             margin: 0;
         }
+        h2.que_tit {
+            width: auto;
+            margin: 0;
+        }
+        .dl_main {
+            section.col {
+                display: block;
+                border-top: 1px dotted;
+                line-height: 1.5;
+                padding: 10px;
+                h3 {
+                    background: none;
+                }    
+            }
+            input {
+                width: auto;
+            }        
+        }
     }
 }
-
 /*********************
 FOOTER STYLES
 *********************/
