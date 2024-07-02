@@ -56,6 +56,14 @@ h2.dl {
             font-size: 4.7vw;
             margin: 0;
         }
+        .dl_list li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            width: auto;
+            height: auto;
+            bottom: -23px;
+            left: 165px;
+        }
         h2.que_tit {
             width: auto;
             margin: 0;
